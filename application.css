@@ -208,7 +208,7 @@ header {
 #blog-post #right-nav{
 	position: absolute;
 	right: 15px;
-	top: 15px;
+	top: 10px;
 }
 
 #header-image img{
@@ -237,4 +237,33 @@ header {
 #next-post .post-item{
 	border-bottom: none;
 	padding-bottom: 0px;
+}
+
+/*tablet size */
+@media (max-width: 767px){
+	.body-container{width: 90%;}
+}
+
+
+/* Mobile size - iPhone 6 normal size & smaller*/
+@media (max-width: 680px){
+
+	#right-nav a:last-child{
+		display: none;
+	}
+	.post-item .left-section {
+		width: 100%;
+	}
+
+	.post-item .right-section{
+		display: none;
+	} 
+
+	#blog-post header{
+		height: 35px;
+	}
+	#blog-post header #center{
+		display: none;
+	}
+
 }
